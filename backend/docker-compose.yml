@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  db:
+    container_name: mysql
+    platform: linux/x86_64
+    image: mysql
+    restart: always
+    environment:
+        MYSQL_ROOT_PASSWORD: 'password'
+        MYSQL_USER: 'user'
+        MYSQL_PASSWORD: 'password'
+        MYSQL_DATABASE: 'todolist'
+    ports: 
+      - '3306:3306'
