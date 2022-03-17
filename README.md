@@ -21,9 +21,9 @@ https://keiran.scot/2018/03/02/building-a-todo-api-with-golang-and-kubernetes-pa
 docker run -d -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=root --platform linux/x86_64 mysql
 
 ## CRUD 
-curl -i localhost:8000/healthz
-curl -i -X PUT -d 'description=Feed the cat 'localhost:8000/todo'
-curl -i -X POST -d 'completed=true 'localhost:8000/todo/1'
-curl -i -X DELETE 'localhost:8000/todo/2'
-curl -i -X GET 'localhost:8000/todo-completed'
-curl -i -X GET 'localhost:8000/todo-incomplete'
+curl -i localhost:8000/healthz  
+curl -i -X PUT -d 'description=Feed the cat 'localhost:8000/todo'  
+curl -i -X POST -d 'completed=true 'localhost:8000/todo/1'  
+curl -i -X DELETE 'localhost:8000/todo/2'  
+curl -i -X GET 'localhost:8000/todo-completed'  
+curl -i -X GET 'localhost:8000/todo-incomplete'  
